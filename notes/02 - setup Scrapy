@@ -1,0 +1,12 @@
+# website
+https://scrapy.org/
+
+# github
+https://github.com/scrapy/scrapy
+
+# documentation
+https://docs.scrapy.org/en/latest/
+
+# installation
+source ~/venv/crawler/bin/activate
+python -m pip install Scrapy

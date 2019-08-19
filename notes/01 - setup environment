@@ -1,0 +1,24 @@
+# this repo is written and run in ubuntu 18.04
+
+# install python3.7
+sudo add-apt-repository ppa:jonathonf/python-3.7
+sudo apt-get update
+sudo apt-get install python3.7
+
+# required to setup venv
+sudo apt install python3.7-distutils
+
+# required to download pip installation script
+sudo apt install curl
+
+# create your python virtual environment and activate it
+# note: install without pip to avoid setup failure
+mkdir venv
+cd venv
+python3 -m venv --without-pip crawler
+source bin/activate
+
+# curl and install pip in venv
+cd crawler
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
